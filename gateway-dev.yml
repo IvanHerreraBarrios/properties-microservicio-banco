@@ -1,0 +1,36 @@
+microservices:
+  card-service-url: http://localhost:8082
+  client-service-url: http://localhost:8081
+  transaction-service-url: http://localhost:8083
+server:
+  port: 8080
+spring:
+  application:
+    name: gateway
+  cloud:
+    config:
+      enabled: false
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    #oye estoy usando configuracion centralizada porque es gateway
+    config-url: /v3/api-docs/swagger-config
+    urls:
+      - name: Client service
+        url: /v3/api-docs/clients
+      - name: Account service
+        url: /v3/api-docs/cards
+      - name: Distbursment service
+        url: /v3/api-docs/transactions
+        #name se usa como id, si tengo mas rutas debo seguir poniendo
+        # - name: ejemplo
+        #url: /v3/api-docs/ejemplo
+    disable-swagger-default-url: true
+    operation-sorter: alpha
+    tags-sorter: alpha
+    display-request-duration: true
+

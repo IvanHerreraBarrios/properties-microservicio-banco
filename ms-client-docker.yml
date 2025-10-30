@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: ms-client
+  cloud:
+    config:
+      enabled: false
+  data:
+    mongodb:
+      authentication-database: admin
+      database: clientes
+      host: localhost
+      password: mongo_pass
+      port: 27017
+      username: mongo_user
