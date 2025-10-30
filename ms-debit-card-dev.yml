@@ -1,11 +1,8 @@
-server:
-  port: 8082
 spring:
   application:
     consume:
       msclient:
         url: http://localhost:8081/client
-
   data:
     mongodb:
       authentication-database: admin
