@@ -5,10 +5,7 @@ spring:
     consume:
       msdebitcard:
         url: http://localhost:8082/debitcard
-    name: ms-transaction
-  cloud:
-    config:
-      enabled: false
+
   data:
     mongodb:
       authentication-database: admin

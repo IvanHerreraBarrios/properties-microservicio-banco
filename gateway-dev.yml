@@ -4,12 +4,7 @@ microservices:
   transaction-service-url: http://localhost:8083
 server:
   port: 8080
-spring:
-  application:
-    name: gateway
-  cloud:
-    config:
-      enabled: false
+
 
 springdoc:
   api-docs:

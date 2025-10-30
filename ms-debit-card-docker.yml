@@ -5,10 +5,7 @@ spring:
     consume:
       msclient:
         url: http://localhost:8081/client
-    name: ms-debit-card
-  cloud:
-    config:
-      enabled: false
+
   data:
     mongodb:
       authentication-database: admin

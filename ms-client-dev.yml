@@ -1,11 +1,6 @@
 server:
   port: 8081
-spring:
-  application:
-    name: ms-client
-  cloud:
-    config:
-      enabled: false
+
   data:
     mongodb:
       authentication-database: admin
